@@ -78,8 +78,10 @@ function canvasSetup(){
     if(windowHeight > windowWidth){
         $("#message h1").css("writing-mode","vertical-rl");
         $("#message-break").html("<br>");
+        $("#my-projects-btn").hide();
     }else{
         $("#message h1").css("writing-mode","inherit");
         $("#message-break").html("");
+        $("#my-projects-btn").show();
     }
 }

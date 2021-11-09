@@ -8,21 +8,26 @@
         margin:0 auto;
         bottom:50px;
     }
-    .skills-container{
-        flex-direction: column;
-        width:90%;
-        margin: 0 auto;
-    }
-    .skill{
-        margin-bottom: 20px;
-    }
     #skills-section-header{
         font-size:12vw;
     }
-    .skill-title{
-        font-size: 7.5vw;
+}
+
+@media screen and (max-width: 1700px){
+    .skill{
+        flex-basis: 28%;
     }
-    .skill-stat{
-        font-size: 5vw;
+}
+
+@media screen and (max-width: 1200px){
+    .skill{
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .skill{
+        flex-basis: 90%;
+        padding:5%;
     }
 }
