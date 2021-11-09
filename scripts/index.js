@@ -1,9 +1,4 @@
 $("nav").ready(function(){
-    var windowHeight = $(window).height()
-    var navHeight = $("nav").outerHeight()
-
-    var canvasHeight = windowHeight - navHeight;
-    $("#canvas").height(canvasHeight);
 
     typing();
     blink();
@@ -57,4 +52,34 @@ function typePhrase(phrase){
             },1500);
         }
     },100);
+}
+
+
+// Responsive
+
+$(document).ready(function(){
+    canvasSetup();
+});
+
+$(window).resize(function(){
+    canvasSetup();
+});
+
+
+
+function canvasSetup(){
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width()
+    var navHeight = $("nav").outerHeight()
+
+    var canvasHeight = windowHeight - navHeight;
+    $("#canvas").height(canvasHeight);
+    
+    if(windowHeight > windowWidth){
+        $("#message h1").css("writing-mode","vertical-rl");
+        $("#message-break").html("<br>");
+    }else{
+        $("#message h1").css("writing-mode","inherit");
+        $("#message-break").html("");
+    }
 }

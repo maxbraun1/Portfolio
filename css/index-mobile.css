@@ -16,4 +16,7 @@
     .skill{
         margin-bottom: 50px;
     }
+    #skills-section-header{
+        font-size:12vw;
+    }
 }

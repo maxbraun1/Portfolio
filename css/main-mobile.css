@@ -1,7 +1,7 @@
 /* Mobile Nav Bar */
 @media screen and (max-width: 1000px) {
     #canvas{
-        margin-top:100px;
+        margin-top:70px;
     }
     nav{
         position:fixed;
