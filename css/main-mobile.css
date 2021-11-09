@@ -42,7 +42,7 @@
         display:block;
     }
 }
-@media screen and (pointer:none) and (pointer:coarse) and (orientation:landscape) {
+@media screen and (max-height: 600px) {
     #landscape{
         display:block;
     }
