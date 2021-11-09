@@ -45,9 +45,22 @@ a{
     text-decoration: none;
 }
 
+/* -- scrollbar -- */
+body::-webkit-scrollbar-track{
+	background-color: #0d0d0d;
+}
+
+body::-webkit-scrollbar{
+	background-color: #0d0d0d;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #00cca3;
+}
+
 @font-face {
     font-family: Staatliches;
-    src: url('../assets/fonts/Staatliches-Regular.ttf');
+    src: url('../assets/fonts/ADAM.otf');
 }
 
 /* ----- SITEWIDE STYLES ----- */
@@ -66,18 +79,25 @@ nav{
     align-items:center;
     justify-content:space-around;
     padding: 30px;
-    background-image:url("../assets/images/squigly.svg");
-    background-position-y:center;
+}
+#mobile-nav-background{
+    position:fixed;
+    width:100%;
+    background-color:#00cca3;
+    height:0px;
+    bottom:0;
+    background-image:url("../assets/images/grid.svg");
+    background-size:auto;
 }
 #logo{
     font-size:50px;
     margin-right:auto;
     color: #f2f2f2;
     background-size: cover;
-    transition: background-image 0.3s;
+    padding-bottom:10px;
 }
 #nav-links{
-    text-align: right;
+    text-align: left;
     display:flex;
     margin-left:auto;
 }
@@ -92,6 +112,29 @@ nav{
     letter-spacing: 10px;
     color: #00cca3;
 }
+#menu-open-btn{
+    display:none;
+    position:fixed;
+    top:0;
+    right:0;
+    height:60px;
+    width:60px;
+    padding:20px;
+    padding-right:40px;
+    cursor:pointer;
+}
+#menu-close-btn{
+    display:none;
+    position:fixed;
+    top:0;
+    right:0;
+    height:60px;
+    width:60px;
+    padding:20px;
+    z-index:1;
+    cursor:pointer;
+}
+
 .button{
     font-size:xx-large;
     font-family: staatliches;

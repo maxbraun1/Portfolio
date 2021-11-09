@@ -9,6 +9,14 @@ $("nav").ready(function(){
     blink();
 });
 
+$(document).scroll(function(){
+    var verticalPos = $(window).scrollTop() - 150;
+    var width = $(window).width();
+    var height = $(window).height();
+    var pos = (width * verticalPos/height) - 200;
+    $("#skills-section-header").css("left", pos+"px");
+});
+
 var list = ["developer", "self-learner", "student", "\"gamer\"", "UI/UX enthusiast"]
 index = 0;
 
