@@ -1,19 +1,11 @@
 @font-face {
-    font-family: Adam;
-    src: url('../assets/fonts/ADAM.otf');
-}
-@font-face {
     font-family: Mono;
-    src: url('../assets/fonts/Code.ttf');
-}
-@font-face {
-    font-family: Roboto;
-    src: url('../assets/fonts/Roboto-Light.ttf');
+    src: url('../assets/fonts/SometypeMono-Medium.ttf');
 }
 
 #canvas{
     background-color: #0d0d0d;
-    background-image: url("../assets/images/grid.svg");
+    background-image: url("../assets/images/grid-black.svg");
     display:flex;
     justify-content: space-around;
     background-size:50px;
@@ -27,7 +19,7 @@
 }
 #message h1{
     text-align: left;
-    font-size: 80px;
+    font-size: 7vw;
     font-family: 'Mono';
     letter-spacing: -2px;
 }
@@ -43,6 +35,7 @@
     overflow:hidden;
 }
 #skills-section-header{
+    font-family: 'Display';
     position:absolute;
     top:0;
     left:0;
@@ -83,7 +76,7 @@
 }
 .skill-title{
     color: #00cca3;
-    font-family: 'Roboto';
+    font-family: 'Display';
     font-size: 40px;
     width:100%;
     text-align: left;
@@ -91,7 +84,7 @@
 }
 .skill-stat{
     padding-top: 15px;
-    font-family: 'Roboto';
+    font-family: 'Display';
     font-size: x-large;
     line-height: 25px;
 }
