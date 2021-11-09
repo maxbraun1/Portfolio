@@ -78,6 +78,27 @@ body{
     color: #f2f2f2;
 }
 
+/* Landscape */
+
+#landscape{
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    font-size: medium;
+    font-family: 'Normal';
+    text-transform: uppercase;
+    font-weight: 900;
+    z-index: 2;
+    line-height: 100vh;
+}
+
 /* Navigation Bar */
 nav{
     background-color:#0d0d0d;
