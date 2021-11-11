@@ -1,6 +1,13 @@
 $(document).ready(function(){
     $("#nav-open-btn").on("click", function(){openMenu()});
     $("#nav-close-btn").on("click", function(){closeMenu()});
+
+    $("#projects-link").on("click", function(){
+        closeMenu();
+        $('html,body').animate({
+            scrollTop: $("#projects").offset().top
+         });
+    });
 });
 
 var menu_open = false;

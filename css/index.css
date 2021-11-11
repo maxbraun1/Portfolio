@@ -67,7 +67,8 @@
     line-height:150px;
     font-weight:900;
     white-space: nowrap;
-    color: #006e58;
+    color: #f2f2f2;
+    text-shadow: 4px 4px #006e58;
 }
 .skills-container{
     width:90%;
@@ -126,7 +127,6 @@
 /* PROJECTS */
 
 #projects{
-    display:none;
     width:100%;
     padding-top:150px;
     background-color:#f2f2f2;
@@ -143,20 +143,36 @@
     line-height:150px;
     font-weight:900;
     white-space: nowrap;
-    color:#d7d7d7;
+    color:#0d0d0d;
+    text-shadow: 4px 4px #d7d7d7;
 }
 .project{
     display:flex;
     justify-content: space-evenly;
     width:100%;
+    padding:5% 0;
+    border-top:1px solid gainsboro;
+}
+.project:nth-child(odd){
+    flex-direction: row-reverse;
 }
 .project-showcase{
-    flex-basis:40%;
-    padding:5% 0;
+    flex-basis:50%;
+    text-align:center;
+    background-image:url("../assets/images/cross.svg");
+    background-size:50px;
+}
+.project-media{
+    max-width:100%;
+    max-height:50vh;
+    transition: transform .5s;
+}
+.project-media:hover{
+    transform: scale(1.2);
 }
 .project-info{
-    flex-basis:40%;
-    padding:5% 0;
+    flex-basis:30%;
+    padding:0;
 }
 .project-title{
     padding:10px 0;
@@ -164,9 +180,24 @@
     border-bottom:2px solid #0d0d0d;
 }
 .project-desc{
-    padding:10px;
     font-family:'Normal';
-    font-size:1vw;
+    padding:10px 0;
+    font-size:x-large;
+    line-height: 1.5em;
+}
+.project-icons{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
+.project-icons img{
+    width:40px;
+    height:40px;
+    padding:5px;
+    transition: background-color .2s;
+}
+.project-icons img:hover{
+    background-color:gainsboro;
 }
 
 /* FOOTER */

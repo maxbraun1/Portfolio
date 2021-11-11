@@ -13,7 +13,7 @@ $(document).scroll(function(){
     projectHeaderSlide();
 });
 
-var list = ["developer", "self-learner", "student", "\"gamer\"", "UI/UX enthusiast"]
+var list = ["developer", "self learner", "student", "\"gamer\"", "UI/UX enthusiast"]
 index = 0;
 
 function blink(){
@@ -87,7 +87,6 @@ function centerOrbit(){
         var middle = width/2 - half;
         $("#orbit").css("left",middle);
     }else{
-        console.log("yes");
         $("#orbit").css("right",-half);
         $("#orbit").css("left","auto");
     }

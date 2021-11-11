@@ -125,15 +125,16 @@ nav{
     display:none;
     text-align: center;
 }
-#nav-links li a{
-    line-height: 25vh;
+#nav-links li a, .no-link{
+    line-height: 33.3vh;
     display:block;
     color: #f2f2f2;
     font-size: 5vw;
     transition: letter-spacing 0.3s;
     border-bottom:2px solid #404040;
+    cursor:pointer;
 }
-#nav-links li a:hover{
+#nav-links li a:hover, .no-link:hover{
     letter-spacing: 20px;
     color: #00cca3;
 }
