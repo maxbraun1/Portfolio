@@ -1,15 +1,16 @@
-$("nav").ready(function(){
-
+$(document).ready(function(){
     typing();
     blink();
+    centerOrbit();
+});
+
+$(window).resize(function(){
+    centerOrbit();
 });
 
 $(document).scroll(function(){
-    var verticalPos = $(window).scrollTop() - 150;
-    var width = $(window).width();
-    var height = $(window).height();
-    var pos = (width * verticalPos/height) - 200;
-    $("#skills-section-header").css("left", pos+"px");
+    skillHeaderSlide();
+    projectHeaderSlide();
 });
 
 var list = ["developer", "self-learner", "student", "\"gamer\"", "UI/UX enthusiast"]
@@ -29,8 +30,7 @@ async function typing() {
     if(phraseIndex >= list.length){
         phraseIndex = 0;
     }
-    typePhrase(list[phraseIndex]);
-    
+    typePhrase(list[phraseIndex]); 
 }
 
 
@@ -54,34 +54,41 @@ function typePhrase(phrase){
     },100);
 }
 
+function skillHeaderSlide(){
+    var width = $(window).width();
+    var height = $(window).height();
+    var verticalPos = $(window).scrollTop();
+    var elementOffset = $("#skills-section-header").offset().top - height;
+    var scrollPast = verticalPos - elementOffset;
+    var elementWidth = $("#skills-section-header").width();
+    var pos = (width * scrollPast/height) - elementWidth;
+    $("#skills-section-header").css("left", pos+"px");
+}
 
-// Responsive
+function projectHeaderSlide(){
+    var width = $(window).width();
+    var height = $(window).height();
+    var verticalPos = $(window).scrollTop();
+    var elementOffset = $("#projects-section-header").offset().top - height;
+    var scrollPast = verticalPos - elementOffset;
+    var elementWidth = $("#projects-section-header").width();
+    var pos = (width * scrollPast/height) - elementWidth;
+    $("#projects-section-header").css("right", pos+"px");
+}
 
-$(document).ready(function(){
-    canvasSetup();
-});
+function centerOrbit(){
+    var width = $(window).width();
+    var height = $(window).height();
+    var half = $("#orbit").width()/2;
 
-$(window).resize(function(){
-    canvasSetup();
-});
+    $("#orbit").css("bottom",-half);
 
-
-
-function canvasSetup(){
-    var windowHeight = $(window).height();
-    var windowWidth = $(window).width()
-    var navHeight = $("nav").outerHeight()
-
-    var canvasHeight = windowHeight - navHeight;
-    $("#canvas").height(canvasHeight);
-    
-    if(windowHeight > windowWidth){
-        $("#message h1").css("writing-mode","vertical-rl");
-        $("#message-break").html("<br>");
-        $("#my-projects-btn").hide();
+    if($(window).width() < 1000){
+        var middle = width/2 - half;
+        $("#orbit").css("left",middle);
     }else{
-        $("#message h1").css("writing-mode","inherit");
-        $("#message-break").html("");
-        $("#my-projects-btn").show();
+        console.log("yes");
+        $("#orbit").css("right",-half);
+        $("#orbit").css("left","auto");
     }
 }

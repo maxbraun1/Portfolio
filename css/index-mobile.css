@@ -1,12 +1,13 @@
 @media screen and (max-width: 1000px) {
     #message h1{
-        font-size: 11vw;
+        font-size: 12vw;
         max-width: 100%;
     }
-    #my-projects-btn{
-        position:absolute;
-        margin:0 auto;
-        bottom:50px;
+    #message{
+        padding-top:70px;
+    }
+    #orbit{
+        width:100vh;
     }
     #skills-section-header{
         font-size:12vw;

@@ -1,18 +1,41 @@
 @font-face {
     font-family: Mono;
-    src: url('../assets/fonts/SometypeMono-Medium.ttf');
+    src: url('../assets/fonts/theboldfont.ttf');
 }
 
+/* INTRO */
+
 #canvas{
-    background-color: #0d0d0d;
+    background-color:#0d0d0d;
     background-image: url("../assets/images/grid-black.svg");
+    background-size:30px;
     display:flex;
     justify-content: space-around;
-    background-size:50px;
+    background-size:26px;
     width:100%;
+    height:100vh;
     overflow:hidden;
+    position:relative;
+}
+#orbit{
+    z-index: 0;
+    position:absolute;
+    width:120vw;
+    right:0;
+    animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+
 }
 #message{
+    z-index: 1;
     width:100%;
     padding:8%;
 }
@@ -21,11 +44,12 @@
     text-align: left;
     font-size: 7vw;
     font-family: 'Mono';
-    letter-spacing: -2px;
 }
 #message button{
     margin-top:50px;
 }
+
+/* SKILLS */
 
 #skills{
     background-color: #028167;
@@ -40,16 +64,14 @@
     top:0;
     left:0;
     font-size: 100px;
-    padding:25px;
-    line-height:100px;
+    line-height:150px;
     font-weight:900;
-    padding-bottom:30px;
-    width:100%;
+    white-space: nowrap;
     color: #006e58;
 }
 .skills-container{
     width:90%;
-    margin:30px auto 0 auto;
+    margin:0 auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -100,6 +122,54 @@
     border-top: 2px solid #f1f1f1;
     margin-top: 15px;
 }
+
+/* PROJECTS */
+
+#projects{
+    display:none;
+    width:100%;
+    padding-top:150px;
+    background-color:#f2f2f2;
+    color:#0d0d0d;
+    position:relative;
+    overflow: hidden;
+}
+#projects-section-header{
+    font-family: 'Display';
+    position:absolute;
+    top:0;
+    right:0;
+    font-size: 100px;
+    line-height:150px;
+    font-weight:900;
+    white-space: nowrap;
+    color:#d7d7d7;
+}
+.project{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+.project-showcase{
+    flex-basis:40%;
+    padding:5% 0;
+}
+.project-info{
+    flex-basis:40%;
+    padding:5% 0;
+}
+.project-title{
+    padding:10px 0;
+    width:100%;
+    border-bottom:2px solid #0d0d0d;
+}
+.project-desc{
+    padding:10px;
+    font-family:'Normal';
+    font-size:1vw;
+}
+
+/* FOOTER */
 
 footer{
     display:flex;
