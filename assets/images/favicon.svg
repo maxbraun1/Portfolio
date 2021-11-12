@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg4946"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4948"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="397.33138"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9133"
+       units="mm"
+       spacingx="0.99999999"
+       spacingy="0.99999999" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4943" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:141.111px;line-height:1.25;font-family:sans-serif;fill:#00cca3;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="39.886719"
+       y="149.4594"
+       id="text5559"><tspan
+         sodipodi:role="line"
+         id="tspan5557"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:141.111px;font-family:Newake;-inkscape-font-specification:Newake;stroke-width:0.264583;fill:#00cca3;fill-opacity:1"
+         x="39.886719"
+         y="149.4594">M</tspan></text>
+    <circle
+       style="fill:none;stroke:#00cca3;stroke-width:10;fill-opacity:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path9159"
+       cx="100"
+       cy="100"
+       r="95" />
+  </g>
+</svg>
