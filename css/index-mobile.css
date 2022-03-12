@@ -9,24 +9,6 @@
     #orbit{
         width:100vh;
     }
-    #skills-section-header,#projects-section-header{
-        font-size:12vw;
-        line-height: 100px;
-    }
-    #projects,#skills{
-        padding-top:100px;
-    }
-    .project{
-        flex-direction: column;
-        width:80%;
-        padding:10%;
-    }
-    .project:nth-child(odd){
-        flex-direction: column;
-    }
-    .project-showcase{
-        margin-bottom:10%;
-    }
 }
 
 @media screen and (max-width: 1700px){

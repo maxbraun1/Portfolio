@@ -6,12 +6,9 @@
 /* INTRO */
 
 #canvas{
-    background-color:#0d0d0d;
-    background-image: url("../assets/images/grid-black.svg");
-    background-size:30px;
+    background: #e1e1e1;
     display:flex;
     justify-content: space-around;
-    background-size:26px;
     width:100%;
     height:100vh;
     overflow:hidden;
@@ -38,6 +35,7 @@
     z-index: 1;
     width:100%;
     padding:8%;
+    color:black;
 }
 #message h1{
     width:100%;
@@ -49,26 +47,98 @@
     margin-top:50px;
 }
 
+/* ABOUT */
+
+#about{
+    background-color: white;
+    color:black;
+    padding:50px 0;
+    text-align: center;
+    position:relative;
+    overflow: hidden;
+}
+#about-container{
+    width:100%;
+    max-width: 600px;
+    margin:0 50px;
+    box-sizing: border-box;
+    margin:0 auto;
+    background-color: white;
+    z-index: 1;
+    position:relative;
+    padding:20px;
+}
+#meImg{
+    width:100%;
+    filter:grayscale(100);
+    margin-bottom:30px;
+    border-radius: 30px;
+    transition: all .4s ease-in-out;
+}
+#meImg:hover{
+    border-radius: 0;
+    filter:none;
+}
+#about-title{
+    font-size: 50px;
+    margin-bottom:20px;
+}
+.about-p{
+    text-align: left;
+    font-size: 18px;
+    text-indent:40px;
+    font-family:Normal;
+    line-height: 2;
+    margin-bottom:20px;
+}
+.about-p a{
+    color: #00997a;
+    font-weight: bold;
+}
+.about-p a:hover{
+    color:#00614e;
+}
+#bluImg{
+    width:150px;
+    height:150px;
+    position:absolute;
+    top:65%;
+    left:8%;
+    z-index: 0;
+    transform:rotate(-30deg);
+    transition: all .2s ease-in-out;
+}
+#bluImg:hover{
+    transform:rotate(0deg);
+    border-radius:0;
+    transform:scale(2);
+}
+#cardinalImg{
+    width:120px;
+    position:absolute;
+    top:40%;
+    right:10%;
+    z-index: 0;
+    transform:rotate(30deg);
+    transition: all .2s ease-in-out;
+}
+#cardinalImg:hover{
+    transform:rotate(0deg);
+    transform:scale(2);
+}
+
 /* SKILLS */
 
 #skills{
-    background-color: #028167;
-    padding-bottom: 30px;
-    padding-top:150px;
-    position:relative;
-    overflow:hidden;
+    background-color: #e1e1e1;
+    text-align:center;
+    padding-bottom:50px;
 }
 #skills-section-header{
     font-family: 'Display';
-    position:absolute;
-    top:0;
-    left:0;
-    font-size: 100px;
-    line-height:150px;
-    font-weight:900;
-    white-space: nowrap;
-    color: #f2f2f2;
-    text-shadow: 4px 4px #006e58;
+    color:black;
+    font-size: 50px;
+    padding:50px;
 }
 .skills-container{
     width:90%;
@@ -78,25 +148,20 @@
     justify-content: space-between;
 }
 .skill{
+    text-align: left;
     flex-basis: 20%;
     position: relative;
     background-color: #f7f7f7;
     justify-items: flex-start;
     color: black;
-    padding: 2%;
+    padding: 20px 2%;
     margin-bottom:20px;
 }
 .skill-icon{
-    width:45px;
-    height:45px;
-    position:absolute;
-    top:0px;
-    right:0px;
-    padding:10px;
-    transition: transform 0.3s;
-}
-.skill:hover .skill-icon{
-    transform: scale(1.8);
+    width:40px;
+    height:40px;
+    padding:5px;
+    float:right;
 }
 .skill-title{
     font-family: 'Display';
@@ -128,51 +193,70 @@
 
 #projects{
     width:100%;
-    padding-top:150px;
-    background-color:#f2f2f2;
-    color:#0d0d0d;
-    position:relative;
-    overflow: hidden;
+    background-color:#2c2c2c;
+    padding:0 30px;
+    box-sizing: border-box;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 #projects-section-header{
     font-family: 'Display';
-    position:absolute;
-    top:0;
-    right:0;
-    font-size: 100px;
-    line-height:150px;
-    font-weight:900;
-    white-space: nowrap;
-    color:#0d0d0d;
-    text-shadow: 4px 4px #d7d7d7;
+    font-size: 50px;
+    color: white;
+    margin: 30px;
+    line-height: 1;
+    padding:10px;
+    border-bottom: 10px solid #00997a;
 }
 .project{
-    display:flex;
-    justify-content: space-evenly;
+    color:black;
+    margin-bottom: 20px;
     width:100%;
-    padding:5% 0;
-    border-top:1px solid gainsboro;
-}
-.project:nth-child(odd){
-    flex-direction: row-reverse;
+    max-width: 800px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 .project-showcase{
-    flex-basis:50%;
+    width:100%;
     text-align:center;
     background-image:url("../assets/images/cross.svg");
     background-size:50px;
+    background-color: gainsboro;
 }
 .project-media{
     max-width:100%;
+    padding:30px;
+    box-sizing: border-box;
     max-height:50vh;
     transition: transform .5s;
 }
 .project-media:hover{
-    transform: scale(1.2);
+    
 }
 .project-info{
-    flex-basis:30%;
+    width:100%;
     padding:0;
+    text-align: left;
+    background-color: white;
+    padding:30px;
+    box-sizing: border-box;
+}
+.project-info button{
+    background-color: #00997a;
+    font-size: 20px;
+    color:white;
+    padding:15px 20px;
+    border-radius: 10px;
+    border:none;
+    font-family: Normal;
+    cursor:pointer;
+    transition: all .2s linear;
+    margin-bottom:10px;
+}
+.project-info button:hover{
+    background-color: #00614e;
 }
 .project-title{
     padding:10px 0;
@@ -182,8 +266,8 @@
 .project-desc{
     font-family:'Normal';
     padding:10px 0;
-    font-size:x-large;
-    line-height: 1.5em;
+    font-size:18px;
+    line-height: 2em;
 }
 .project-icons{
     width:100%;

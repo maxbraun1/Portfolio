@@ -47,15 +47,16 @@ a{
 
 /* -- scrollbar -- */
 body::-webkit-scrollbar-track{
-	background-color: #0d0d0d;
+	background-color: white;
 }
 
 body::-webkit-scrollbar{
-	background-color: #0d0d0d;
+    width:8px;
+	background-color: black;
 }
 
 body::-webkit-scrollbar-thumb{
-	background-color: #ffffff;
+	background-color: black;
 }
 
 @font-face {

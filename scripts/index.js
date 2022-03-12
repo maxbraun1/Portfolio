@@ -2,18 +2,14 @@ $(document).ready(function(){
     typing();
     blink();
     centerOrbit();
+    AOS.init();
 });
 
 $(window).resize(function(){
     centerOrbit();
 });
 
-$(document).scroll(function(){
-    skillHeaderSlide();
-    projectHeaderSlide();
-});
-
-var list = ["developer", "self learner", "student", "\"gamer\"", "UI/UX enthusiast"]
+var list = ["developer", "self learner", "student", "UI Lover"]
 index = 0;
 
 function blink(){
@@ -52,28 +48,6 @@ function typePhrase(phrase){
             },1500);
         }
     },100);
-}
-
-function skillHeaderSlide(){
-    var width = $(window).width();
-    var height = $(window).height();
-    var verticalPos = $(window).scrollTop();
-    var elementOffset = $("#skills-section-header").offset().top - height;
-    var scrollPast = verticalPos - elementOffset;
-    var elementWidth = $("#skills-section-header").width();
-    var pos = (width * scrollPast/height) - elementWidth;
-    $("#skills-section-header").css("left", pos+"px");
-}
-
-function projectHeaderSlide(){
-    var width = $(window).width();
-    var height = $(window).height();
-    var verticalPos = $(window).scrollTop();
-    var elementOffset = $("#projects-section-header").offset().top - height;
-    var scrollPast = verticalPos - elementOffset;
-    var elementWidth = $("#projects-section-header").width();
-    var pos = (width * scrollPast/height) - elementWidth;
-    $("#projects-section-header").css("right", pos+"px");
 }
 
 function centerOrbit(){
