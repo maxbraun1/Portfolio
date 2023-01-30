@@ -5,66 +5,91 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Max Braun - Home</title>
+    <title>Max Braun - Junior Full Stack Developer</title>
     <meta name="description" content="Max Braun Portfolio">
     <meta name="author" content="Max Braun">
 
     <meta property="og:title" content="Max Braun Portfolio">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Max Braun Portfolio">
-    <meta property="og:image" content="/assets/images/favicon.png">
+    <meta property="og:image" content="/assets/icons/favicon.png">
 
-    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="icon" href="./assets/icons/favicon.png">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/main-mobile.css">
-    <link rel="stylesheet" href="./css/index-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
 
     <script type="text/javascript" src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
 
     </head>
 
     <body>
-        <h1 id="landscape">Please rotate your device to portrait orientation.</h1>
 
-        <img id="nav-open-btn" src="assets/images/menu-open.svg"/>
-
-        <nav>
-            <ul id="nav-links">
-                <img id="nav-close-btn" src="assets/images/menu-close.svg"/>
-                <li><span id="projects-link" class="no-link">PROJECTS</span></li>
-                <li><a href="https://www.linkedin.com/in/maxbraun12/" target="_blank">LINKEDIN</a></li>
-                <li><a href="https://github.com/maxbraun1" target="_blank">GITHUB</a></li>
-            </ul>
-        </nav>
-
-        <div id="canvas">
+        <div id="intro">
             <div id="message" data-aos="fade-up">
-                <h1>Hello,<br> I'm <span style='color:#00997a'>Max</span>!</br>
-                    I'm a...</br> <span id="change"></span><span id="dash">_</span>&nbsp;</h1>
+                <h1>Hello,<br> I'm Max!</h1>
+                <p>Junior full stack developer.</p>
+                <div id="intro-buttons">
+                    <button id="primary-intro-button">About Me</button>
+                    <a href=""><button id="secondary-intro-button">Contact</button></a>
+                </div>
             </div>
-            <img id="orbit" src="assets/images/orbit.svg"/>
+            <div id="pictures" data-aos="fade-down">
+                <img id="blob" src="./assets/images/blob.svg"/>
+                <img id="intro-me" src="./assets/images/headshot.jpg"/>
+            </div>
         </div>
 
         <div id="about">
+            <img id="about-blob" src="./assets/images/blob.svg"/>
             <div id="about-container">
-                <img data-aos="zoom-in" id="meImg" src="./assets/images/me-min.jpeg"/>
-                <h1 id="about-title">About Me...</h1>
-                <p class="about-p">I'm Max Braun, a senior at Ball State University in Muncie, Indiana. I grew up in Evansville, Indiana and attended St. Benedict Cathedral where I was first introduced to the fascinating world of programming. I was given an assignment to make a game using <a target="_blank" href="https://scratch.mit.edu/">Scratch</a> and later a website using <a target="_blank" href="https://www.weebly.com/">Weebly</a>, and I was hooked. From there I graduated to Reitz Memorial High School where I continued my interest in development, and started doing occasional freelance web development work.</p>
-                <p class="about-p">In August of 2018 I began my attendance at Ball State, majoring in Computer Science. I learned a lot about the software development industry that you don't learn from entry level freelancing or following online tutorials. I learned about unit testing, clean code, pair programming, time complexity, and much more. I'm very greatful for all I've been taught, the people I've met, and the experiences I've had at Ball State.</p>
-                <p class="about-p">As my college career comes to an end and I enter the professional world, I hope to find a career in which I can continue to learn and grow as a developer. I, along with my girlfriend Macy, and our dogs, Blu and Harper, will soon be packing up and moving down to Florida. I'm very excited for the change and I hope to find my place as a developer in my new home.</p>
+                <div id="story" data-aos="fade-right">
+                    <h1 id="about-title">About Me...</h1>
+                    <p class="about-p">My name is Max Braun, and I'm a junior full stack developer located in Riverview, FL. I'm a recent graduate from Ball State University with a bachelors in Computer Science. I am passionate about advancing my knowledge in this constantly changing environment that is the web.</p>
+                    <p class="about-p">My career goal is to work somewhere that pushes me to keep expanding my knowledge of the technologies that make up the internet. As I enter the professional world, I hope to find a position in which I can continue to learn and grow as a developer.</p>
+                </div>
+                <div id="about-info" data-aos="fade-left">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Email</td>
+                                <td><a href="mailto:maxbraun175@gmail.com">maxbraun175@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td><a href="tel:8127600053">(812)-760-0053</a></td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>23 Years Old</td>
+                            </tr>
+                            <tr>
+                                <td>Location</td>
+                                <td>Riverview, FL</td>
+                            </tr>
+                            <tr>
+                                <td>Education</td>
+                                <td>Bachelor of Computer Science</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul id="social-icons">
+                        <a href="https://www.linkedin.com/in/maxbraun12" target="_blank"><li><img src="./assets/icons/linkedin.png"/><span>LinkedIn</span></li></a>
+                        <a href="https://github.com/maxbraun1" target="_blank"><li><img src="./assets/icons/github.png"/><span>GitHub</span></li></a>
+                        <a href="./assets/Resume.pdf" target="_blank"><li><img src="./assets/icons/download.png"/><span>My Resume</span></li></a>
+                    </ul>
+                </div>
             </div>
-            <img data-aos="zoom-in" id="bluImg" src="./assets/images/blu.jpg"/>
-            <img data-aos="zoom-in" id="cardinalImg" src="./assets/images/cardinal.png"/>
         </div>
 
         <section id="skills">
-            <h1 id="skills-section-header">What I've Learned...</h1>
+            <h1 id="skills-section-header">My Skills</h1>
             <div class="skills-container"  data-aos="fade-up">
                 <div class="skill">
                     <img class="skill-icon" src="assets/images/icons/html.svg"/>
@@ -112,15 +137,6 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/java.svg"/>
-                    <h1 class="skill-title">Java</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>2</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>2</h2>
-                        <p class="skill-desc">Java has been the primary technology I have used in college. In my Advanced Programming (CS222) I worked with classmates on 2 major projects using Java and IntelliJ IDEA.</p>
-                    </div>
-                </div>
-                <div class="skill">
                     <img class="skill-icon" src="assets/images/icons/php.svg"/>
                     <h1 class="skill-title">PHP</h1>
                     <div class="skill-info">
@@ -164,87 +180,108 @@
                         <p class="skill-desc">I have used Python multiple times throughout my college career, such as in my database design and data mining classes.</p>
                     </div>
                 </div>
+                <div class="skill">
+                    <img class="skill-icon" src="assets/images/icons/java.svg"/>
+                    <h1 class="skill-title">Java</h1>
+                    <div class="skill-info">
+                        <h2 class="skill-stat"><span>Years: </span>2</h2>
+                        <h2 class="skill-stat"><span>Projects: </span>2</h2>
+                        <p class="skill-desc">Java has been the primary technology I have used in college. In my Advanced Programming (CS222) I worked with classmates on 2 major projects using Java and IntelliJ IDEA.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects">
-            <h1 id="projects-section-header">What I've Made...</h1>
-            <div class="project">
-                <div class="project-showcase">
-                    <img class="project-media" src="assets/images/projects/pear.png"/>
-                </div>
-                <div class="project-info">
-                    <h1 class="project-title">Pear Programming</h1>
-                    <p class="project-desc">I created Pear Programming as a place for entry level developers like me to share project ideas and work together to build their portfolios and teamwork skills. I built the client side using React, and the API using Node.js and Express, with MongoDB as the database. The client is hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a> and the API is hosted with <a href="https://www.heroku.com" target="_blank">Heroku</a>. I also used <a href="https://cloudinary.com/" target="_blank">Cloudinary</a> to host the image uploads such as profile pictures and post images.</p>
-                    <p class="project-desc">Passwords are hashed server-side and API routes are protected based on whether you are logged in or not. Please feel free to make an account and try it out!</p>
-                    <a href="https://pearprogramming.co" target="_blank"><button>Visit Pearprogramming.co</button></a>
-                    <div class="project-icons">
-                        <img src="assets/images/icons/react.svg"/>
-                        <img src="assets/images/icons/css.svg"/>
-                        <img src="assets/images/icons/nodejs.svg"/>
-                        <img src="assets/images/icons/mongodb.svg"/>
-                        <img src="assets/images/icons/git.svg"/>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-showcase">
-                    <img class="project-media" src="assets/images/projects/thisWebsite.svg"/>
-                </div>
-                <div class="project-info">
-                    <h1 class="project-title">This Website</h1>
-                    <p class="project-desc">I created this website in my spare time as an extension to my resume. Many of my old web development projects have been lost to the chaotic file management of my teenage self, so this website was a great way to wrap up some of what I learned back then into one website. I decided to forgo the use of a CMS like Wordpress for this site in order to not only have more precise control over the layout and functionality, but also to display my ability to build a responsive website from scratch.</p>
-                    <a href="https://github.com/maxbraun1/Portfolio" target="_blank"><button>View GitHub Repo</button></a>
-                    <div class="project-icons">
-                        <img src="assets/images/icons/html.svg"/>
-                        <img src="assets/images/icons/css.svg"/>
-                        <img src="assets/images/icons/javascript.svg"/>
-                        <img src="assets/images/icons/git.svg"/>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-showcase">
-                    <img class="project-media" src="assets/images/projects/capstone.png"/>
-                </div>
-                <div class="project-info">
-                    <h1 class="project-title">Capstone Project</h1>
-                    <p class="project-desc">This website is currently in development by my capstone teammates and I. We are building a platform for Pharmacist Bob Gold to share his reviews of popular drug ads, and the problems with them. It allows for him, along with anyone else given admin credentials, to log in and add, edit, or delete reviews. The website is built using HTML, CSS, jQuery, PHP, and MySQL.</p>
-                    <a href="https://github.com/Jordan-Demske/CS495_Capstone_Project" target="_blank"><button>View GitHub Repo</button></a>
-                    <div class="project-icons">
-                        <img src="assets/images/icons/html.svg"/>
-                        <img src="assets/images/icons/css.svg"/>
-                        <img src="assets/images/icons/javascript.svg"/>
-                        <img src="assets/images/icons/php.svg"/>
-                        <img src="assets/images/icons/mysql.svg"/>
-                        <img src="assets/images/icons/git.svg"/>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-showcase">
-                    <img class="project-media" src="assets/images/projects/wikisearch.svg"/>
-                </div>
-                <div class="project-info">
-                    <h1 class="project-title">WikiSearch</h1>
-                    <p class="project-desc">A project partner and I collaborated to develop and test a Java application which uses Wikipedia’s API to display page data. Given a term that exists as a page on Wikipedia, the application displays information about that page’s recent revisions and/or the pages top editors.</p>
-                    <a href="https://github.com/maxbraun1/WikiSearch" target="_blank"><button>View GitHub Repo</button></a>
-                    <div class="project-icons">
-                        <img src="assets/images/icons/java.svg"/>
-                        <img src="assets/images/icons/git.svg"/>
-                        <img src="assets/images/icons/gradle.svg"/>
-                        <img src="assets/images/icons/intellij.svg"/>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <h1 id="projects-section-header">My Projects</h1>
 
-        <footer>
-            <div id="social-icons">
-                <a href="https://www.linkedin.com/in/maxbraun12/" target="_blank"><img src="./assets/images/icons/linkedin.png"/></a>
-                <a href="https://github.com/maxbraun1" target="_blank"><img src="./assets/images/icons/github.png"/></a>
+            <div class="project" data-aos="zoom-in">
+                <img class="project-header" src="assets/images/project-headers/pearprogramming.jpg"/>
+                <img class="project-header-mobile" src="assets/images/project-headers/pearprogramming-mobile.jpg"/>
+                <div class="project-info">
+                    <div class="project-sidebar">
+                        <a class="project-button" href="https://pearprogramming.co" target="_blank">Visit Site</a>
+                        <ul class="project-icons">
+                            <li><img src="assets/images/icons/react.svg"/>React</li>
+                            <li><img src="assets/images/icons/css.svg"/>CSS</li>
+                            <li><img src="assets/images/icons/nodejs.svg"/>Node JS</li>
+                            <li><img src="assets/images/icons/mongodb.svg"/>MongoDB</li>
+                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="project-desc">
+                        <h1>Pear Programming</h1>
+                        <p>I created Pear Programming as a place for entry level developers like me to share project ideas and work together to build their portfolios and teamwork skills. I built the client side using React, and the API using Node.js and Express, with MongoDB as the database. The client is hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a> and the API is hosted with <a href="https://www.heroku.com" target="_blank">Heroku</a>. I also used <a href="https://cloudinary.com/" target="_blank">Cloudinary</a> to host the image uploads such as profile pictures and post images.</p>
+                        <p>Passwords are hashed server-side and API routes are protected based on whether you are logged in or not. Please feel free to make an account and try it out!</p>
+                    </div>
+                </div>
             </div>
-        </footer>
+
+            <div class="project" data-aos="zoom-in">
+                <img class="project-header" src="assets/images/project-headers/maxbraunus.jpg"/>
+                <img class="project-header-mobile" src="assets/images/project-headers/maxbraunus-mobile.jpg"/>
+                <div class="project-info">
+                    <div class="project-sidebar">
+                        <a class="project-button" href="https://github.com/maxbraun1/Portfolio" target="_blank">Visit GitHub Repo</a>
+                        <ul class="project-icons">
+                            <li><img src="assets/images/icons/html.svg"/>HTML</li>
+                            <li><img src="assets/images/icons/css.svg"/>CSS</li>
+                            <li><img src="assets/images/icons/javascript.svg"/>Javascript</li>
+                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="project-desc">
+                        <h1>This Website</h1>
+                        <p>I created this website in my spare time as an extension to my resume. Many of my old web development projects have been lost to the chaotic file management of my teenage self, so this website was a great way to wrap up some of what I learned back then into one website. I decided to forgo the use of a CMS like Wordpress for this site in order to not only have more precise control over the layout and functionality, but also to display my ability to build a responsive website from scratch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-aos="zoom-in">
+                <img class="project-header" src="assets/images/project-headers/betterdrugads.jpg"/>
+                <img class="project-header-mobile" src="assets/images/project-headers/betterdrugads-mobile.jpg"/>
+                <div class="project-info">
+                    <div class="project-sidebar">
+                        <a class="project-button" href="https://github.com/Jordan-Demske/CS495_Capstone_Project" target="_blank">Visit GitHub Repo</a>
+                        <a class="project-button" href="http://betterdrugads.com" target="_blank">Visit Site</a>
+                        <ul class="project-icons">
+                            <li><img src="assets/images/icons/html.svg"/>HTML</li>
+                            <li><img src="assets/images/icons/css.svg"/>CSS</li>
+                            <li><img src="assets/images/icons/javascript.svg"/>Javascript</li>
+                            <li><img src="assets/images/icons/php.svg"/>PHP</li>
+                            <li><img src="assets/images/icons/mysql.svg"/>MySQL</li>
+                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="project-desc">
+                        <h1>Capstone Project</h1>
+                        <p>This website is currently in development by my capstone teammates and I. We are building a platform for Pharmacist Bob Gold to share his reviews of popular drug ads, and the problems with them. It allows for him, along with anyone else given admin credentials, to log in and add, edit, or delete reviews. The website is built using HTML, CSS, jQuery, PHP, and MySQL.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-aos="zoom-in">
+                <img class="project-header" src="assets/images/project-headers/wikisearch.jpg"/>
+                <img class="project-header-mobile" src="assets/images/project-headers/wikisearch-mobile.jpg"/>
+                <div class="project-info">
+                    <div class="project-sidebar">
+                        <a class="project-button" href="https://github.com/maxbraun1/WikiSearch" target="_blank">Visit GitHub Repo</a>
+                        <ul class="project-icons">
+                            <li><img src="assets/images/icons/java.svg"/>Java</li>
+                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
+                            <li><img src="assets/images/icons/gradle.svg"/>Gradle</li>
+                            <li><img src="assets/images/icons/intellij.svg"/>IntelliJ</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="project-desc">
+                        <h1>WikiSearch</h1>
+                        <p>A project partner and I collaborated to develop and test a Java application which uses Wikipedia’s API to display page data. Given a term that exists as a page on Wikipedia, the application displays information about that page’s recent revisions and/or the pages top editors.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         
     </body>
 </html>
