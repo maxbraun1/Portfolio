@@ -78,6 +78,7 @@ body{
     display:flex;
     width:100%;
     min-height:100vh;
+    overflow:hidden;
 }
 #message{
     flex-basis:50%;
@@ -105,7 +106,7 @@ body{
     outline:none;
     border:none;
     font-size:24px;
-    border-radius:10px;
+    border-radius:7px;
     padding:15px 30px;
     cursor:pointer;
 }
