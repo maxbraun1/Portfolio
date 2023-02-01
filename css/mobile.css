@@ -131,4 +131,8 @@
     .project-sidebar{
         padding:35px;
     }
+    #about-blob {
+        width: auto;
+        height:90%;
+    }
 }
