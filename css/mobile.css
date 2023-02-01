@@ -121,4 +121,14 @@
     .project-header-mobile{
         display:block;
     }
+    #primary-intro-button {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .project-desc{
+        padding:35px;
+    }
+    .project-sidebar{
+        padding:35px;
+    }
 }
