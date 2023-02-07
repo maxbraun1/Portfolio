@@ -85,6 +85,9 @@ body{
     padding:10%;
     box-sizing: border-box;
     color:black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #message h1{
     font-family: 'DM Serif Display', serif;
