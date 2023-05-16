@@ -1,278 +1,402 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Max Braun - Junior Full Stack Developer</title>
-    <meta name="description" content="Max Braun Portfolio">
-    <meta name="author" content="Max Braun">
+    <meta name="description" content="Max Braun Portfolio" />
+    <meta name="author" content="Max Braun" />
 
-    <meta property="og:title" content="Max Braun Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Max Braun Portfolio">
-    <meta property="og:image" content="/assets/icons/favicon.png">
+    <meta property="og:title" content="Max Braun Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Max Braun Portfolio" />
+    <meta property="og:image" content="/assets/icons/favicon.png" />
 
-    <link rel="icon" href="./assets/icons/favicon.png">
+    <link rel="icon" href="./assets/icons/favicon.png" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
 
     <script type="text/javascript" src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
+  </head>
 
-    </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXTJZLLP98"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-VXTJZLLP98");
+  </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXTJZLLP98"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-VXTJZLLP98');
-    </script>
-
-    <body>
-
-        <div id="intro">
-            <div id="message" data-aos="fade-up">
-                <h1>Hello,<br> I'm Max!</h1>
-                <p>Junior full stack developer.</p>
-                <div id="intro-buttons">
-                    <a href="mailto:maxbraun175@gmail.com"><button id="primary-intro-button">Contact Me</button></a>
-                    <button id="secondary-intro-button">My Projects</button>
-                </div>
-            </div>
-            <div id="pictures" data-aos="fade-down">
-                <img id="blob" src="./assets/images/blob.svg"/>
-                <img id="intro-me" src="./assets/images/headshot.jpg"/>
-            </div>
+  <body>
+    <div id="intro">
+      <div id="message" data-aos="fade-up">
+        <h1>
+          Hello,<br />
+          I'm Max!
+        </h1>
+        <p>Junior full stack developer.</p>
+        <div id="intro-buttons">
+          <a href="mailto:maxbraun175@gmail.com"><button id="primary-intro-button">Contact Me</button></a>
+          <button id="secondary-intro-button">My Projects</button>
         </div>
+      </div>
+      <div id="pictures" data-aos="fade-down">
+        <img id="blob" src="./assets/images/blob.svg" />
+        <img id="intro-me" src="./assets/images/headshot.jpg" />
+      </div>
+    </div>
 
-        <div id="about">
-            <img id="about-blob" src="./assets/images/blob.svg"/>
-            <div id="about-container">
-                <div id="story" data-aos="fade-right">
-                    <h1 id="about-title">About Me...</h1>
-                    <p class="about-p">My name is Max Braun, I'm a junior full stack developer located in Riverview, FL. I recently graduated from Ball State University with a bachelors in Computer Science. I am passionate about advancing my knowledge in this constantly changing environment of web development.</p>
-                    <p class="about-p">I'm looking for a career that pushes me to keep expanding my knowledge of the technologies that make up the internet. As I enter the professional world, I hope to find a position in which I can continue to learn and grow as a developer.</p>
-                </div>
-                <div id="about-info" data-aos="fade-left">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Email</td>
-                                <td><a href="mailto:maxbraun175@gmail.com">maxbraun175@gmail.com</a></td>
-                            </tr>
-                            <tr>
-                                <td>Phone</td>
-                                <td><a href="tel:8127600053">(812)-760-0053</a></td>
-                            </tr>
-                            <tr>
-                                <td>Age</td>
-                                <td>23</td>
-                            </tr>
-                            <tr>
-                                <td>Location</td>
-                                <td>Riverview, FL</td>
-                            </tr>
-                            <tr>
-                                <td>Education</td>
-                                <td>Bachelor of Computer Science</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <ul id="social-icons">
-                        <a href="https://www.linkedin.com/in/maxbraun12" target="_blank"><li><img src="./assets/icons/linkedin.png"/><span>LinkedIn</span></li></a>
-                        <a href="https://github.com/maxbraun1" target="_blank"><li><img src="./assets/icons/github.png"/><span>GitHub</span></li></a>
-                        <a href="./assets/Resume-MaxBraun.pdf" target="_blank"><li><img src="./assets/icons/download.png"/><span>My Resume</span></li></a>
-                    </ul>
-                </div>
-            </div>
+    <div id="about">
+      <img id="about-blob" src="./assets/images/blob.svg" />
+      <div id="about-container">
+        <div id="story" data-aos="fade-right">
+          <h1 id="about-title">About Me...</h1>
+          <p class="about-p">
+            My name is Max Braun, I'm a junior full stack developer located in Riverview, FL. I recently graduated from
+            Ball State University with a bachelors in Computer Science. I am passionate about advancing my knowledge in
+            this constantly changing environment of web development.
+          </p>
+          <p class="about-p">
+            I'm looking for a career that pushes me to keep expanding my knowledge of the technologies that make up the
+            internet. As I enter the professional world, I hope to find a position in which I can continue to learn and
+            grow as a developer.
+          </p>
         </div>
+        <div id="about-info" data-aos="fade-left">
+          <table>
+            <tbody>
+              <tr>
+                <td>Email</td>
+                <td>
+                  <a href="mailto:maxbraun175@gmail.com">maxbraun175@gmail.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td><a href="tel:8127600053">(812)-760-0053</a></td>
+              </tr>
+              <tr>
+                <td>Age</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td>Location</td>
+                <td>Riverview, FL</td>
+              </tr>
+              <tr>
+                <td>Education</td>
+                <td>Bachelor of Computer Science</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul id="social-icons">
+            <a href="https://www.linkedin.com/in/maxbraun12" target="_blank"
+              ><li><img src="./assets/icons/linkedin.png" /><span>LinkedIn</span></li></a
+            >
+            <a href="https://github.com/maxbraun1" target="_blank"
+              ><li><img src="./assets/icons/github.png" /><span>GitHub</span></li></a
+            >
+            <a href="./assets/Resume-MaxBraun.pdf" target="_blank"
+              ><li><img src="./assets/icons/download.png" /><span>My Resume</span></li></a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <section id="skills">
-            <h1 id="skills-section-header">My Skills</h1>
-            <div class="skills-container"  data-aos="fade-up">
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/html.svg"/>
-                    <h1 class="skill-title">HTML & CSS</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>5</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
-                        <p class="skill-desc">I have used HTML and CSS countless times for personal projects and freelance work. I am very comfortable with both.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/javascript.svg"/>
-                    <h1 class="skill-title">Javascript</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>3</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
-                        <p class="skill-desc">I have used Javascript many times for personal projects and classwork.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/react.svg"/>
-                    <h1 class="skill-title">React</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>1</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>1</h2>
-                        <p class="skill-desc">I built my React knowledge while working on <a target="_blank" href="https://pearprogramming.co">PearProgramming.co</a> and fell in love with the component driven development style of the library.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/nodejs.svg"/>
-                    <h1 class="skill-title">Node.js and Express</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>1</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>1</h2>
-                        <p class="skill-desc">I used Node.js and Express to build the API of <a target="_blank" href="https://pearprogramming.co">PearProgramming.co</a> and learned a lot about client-server interaction along the way.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/mongodb.svg"/>
-                    <h1 class="skill-title">MongoDB</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>1</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>1</h2>
-                        <p class="skill-desc">I used MongoDB and Mongoose to store all of the data displayed on <a target="_blank" href="https://pearprogramming.co">PearProgramming.co</a>. While sometimes I wish I had originaly chosen a relational database for the project, I am glad to have experience working with a document-oriented database.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/php.svg"/>
-                    <h1 class="skill-title">PHP</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>2</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
-                        <p class="skill-desc">In high school, I used PHP for multiple personal projects. From basic chat rooms with AJAX, to very basic social media websites, I have a lot of experience with entry level PHP.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/mysql.svg"/>
-                    <h1 class="skill-title">MySQL</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>3</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
-                        <p class="skill-desc">I have used basic MySQL in my Database Design course, my capstone project, and in a few personal projects.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/wordpress.svg"/>
-                    <h1 class="skill-title">WordPress</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>4</h2>
-                        <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
-                        <p class="skill-desc">Throughout highschool I worked with <a href="https://www.facebook.com/IMManagers/" target="_blank">IMManagers</a>, a marketing company, as a contract web developer. I developed highly customized and responsive websites for IMManagers' clients using Wordpress.</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="assets/images/icons/git.svg"/>
-                    <h1 class="skill-title">Git & GitHub</h1>
-                    <div class="skill-info">
-                        <h2 class="skill-stat"><span>Years: </span>4</h2>
-                        <p class="skill-desc">I have used Git and GitHub for version control in multiple school and personal projects.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="skills">
+      <h1 id="skills-section-header">My Skills</h1>
+      <div class="skills-container" data-aos="fade-up">
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/html.svg" />
+          <h1 class="skill-title">HTML & CSS</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>5</h2>
+            <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
+            <p class="skill-desc">
+              I have used HTML and CSS countless times for personal projects and freelance work. I am very comfortable
+              with both.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/javascript.svg" />
+          <h1 class="skill-title">Javascript</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>3</h2>
+            <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
+            <p class="skill-desc">I have used Javascript many times for personal projects and classwork.</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/react.svg" />
+          <h1 class="skill-title">React</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>1</h2>
+            <h2 class="skill-stat"><span>Projects: </span>1</h2>
+            <p class="skill-desc">
+              I built my React knowledge while working on
+              <a target="_blank" href="https://pearprogramming.co">PearProgramming.co</a>
+              and fell in love with the component driven development style of the library.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/nodejs.svg" />
+          <h1 class="skill-title">Node.js and Express</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>1</h2>
+            <h2 class="skill-stat"><span>Projects: </span>1</h2>
+            <p class="skill-desc">
+              I used Node.js and Express to build the API of
+              <a target="_blank" href="https://pearprogramming.co">PearProgramming.co</a>
+              and learned a lot about client-server interaction along the way.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/mongodb.svg" />
+          <h1 class="skill-title">MongoDB</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>1</h2>
+            <h2 class="skill-stat"><span>Projects: </span>1</h2>
+            <p class="skill-desc">
+              I used MongoDB and Mongoose to store all of the data displayed on
+              <a target="_blank" href="https://pearprogramming.co">PearProgramming.co</a>. While sometimes I wish I had
+              originaly chosen a relational database for the project, I am glad to have experience working with a
+              document-oriented database.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/php.svg" />
+          <h1 class="skill-title">PHP</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>2</h2>
+            <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
+            <p class="skill-desc">
+              In high school, I used PHP for multiple personal projects. From basic chat rooms with AJAX, to very basic
+              social media websites, I have a lot of experience with entry level PHP.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/mysql.svg" />
+          <h1 class="skill-title">MySQL</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>3</h2>
+            <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
+            <p class="skill-desc">
+              I have used basic MySQL in my Database Design course, my capstone project, and in a few personal projects.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/wordpress.svg" />
+          <h1 class="skill-title">WordPress</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>4</h2>
+            <h2 class="skill-stat"><span>Projects: </span>Unknown</h2>
+            <p class="skill-desc">
+              Throughout highschool I worked with
+              <a href="https://www.facebook.com/IMManagers/" target="_blank">IMManagers</a>, a marketing company, as a
+              contract web developer. I developed highly customized and responsive websites for IMManagers' clients
+              using Wordpress.
+            </p>
+          </div>
+        </div>
+        <div class="skill">
+          <img class="skill-icon" src="assets/images/icons/git.svg" />
+          <h1 class="skill-title">Git & GitHub</h1>
+          <div class="skill-info">
+            <h2 class="skill-stat"><span>Years: </span>4</h2>
+            <p class="skill-desc">
+              I have used Git and GitHub for version control in multiple school and personal projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="projects">
-            <h1 id="projects-section-header">My Projects</h1>
+    <section id="projects">
+      <h1 id="projects-section-header">My Projects</h1>
 
-            <div class="project" data-aos="zoom-in">
-                <img class="project-header" src="assets/images/project-headers/pearprogramming.jpg"/>
-                <img class="project-header-mobile" src="assets/images/project-headers/pearprogramming-mobile.jpg"/>
-                <div class="project-info">
-                    <div class="project-sidebar">
-                        <a class="project-button" href="https://pearprogramming.co" target="_blank">Visit Site</a>
-                        <ul class="project-icons">
-                            <li><img src="assets/images/icons/react.svg"/>React</li>
-                            <li><img src="assets/images/icons/css.svg"/>CSS</li>
-                            <li><img src="assets/images/icons/nodejs.svg"/>Node JS</li>
-                            <li><img src="assets/images/icons/mongodb.svg"/>MongoDB</li>
-                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
-                        </ul>
-                    </div>
-                    <div class="project-desc">
-                        <h1>Pear Programming</h1>
-                        <p>I created Pear Programming as a place for entry level developers like me to share project ideas and work together to build their portfolios and teamwork skills. I built the client using React and the API using Node.js, with MongoDB as the database. The client is hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a> and the API is hosted with <a href="https://render.com" target="_blank">Render</a>. I also used <a href="https://cloudinary.com/" target="_blank">Cloudinary</a> to host the image uploads such as profile pictures and post images.</p>
-                        <p>Passwords are hashed (server-side) and API routes are protected based on whether a user is logged in or not. I also utilized OAuth 2.0 to allow a user to register or log in using their Google account.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="project" data-aos="zoom-in">
+        <img class="project-header" src="assets/images/project-headers/pearprogramming.jpg" />
+        <img class="project-header-mobile" src="assets/images/project-headers/pearprogramming-mobile.jpg" />
+        <div class="project-info">
+          <div class="project-sidebar">
+            <a class="project-button" href="https://pearprogramming.co" target="_blank">Visit Site</a>
+            <ul class="project-icons">
+              <li><img src="assets/images/icons/react.svg" />React</li>
+              <li><img src="assets/images/icons/css.svg" />CSS</li>
+              <li><img src="assets/images/icons/nodejs.svg" />Node JS</li>
+              <li><img src="assets/images/icons/mongodb.svg" />MongoDB</li>
+              <li><img src="assets/images/icons/git.svg" />Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="project-desc">
+            <h1>Pear Programming</h1>
+            <p>
+              I created Pear Programming as a place for entry level developers like me to share project ideas and work
+              together to build their portfolios and teamwork skills. I built the client using React and the API using
+              Node.js, with MongoDB as the database. The client is hosted with
+              <a href="https://www.netlify.com/" target="_blank">Netlify</a> and the API is hosted with
+              <a href="https://render.com" target="_blank">Render</a>. I also used
+              <a href="https://cloudinary.com/" target="_blank">Cloudinary</a>
+              to host the image uploads such as profile pictures and post images.
+            </p>
+            <p>
+              Passwords are hashed (server-side) and API routes are protected based on whether a user is logged in or
+              not. I also utilized OAuth 2.0 to allow a user to register or log in using their Google account.
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <div class="project" data-aos="zoom-in">
-                <img class="project-header" src="assets/images/project-headers/maxbraunus.jpg"/>
-                <img class="project-header-mobile" src="assets/images/project-headers/maxbraunus-mobile.jpg"/>
-                <div class="project-info">
-                    <div class="project-sidebar">
-                        <a class="project-button" href="https://github.com/maxbraun1/Portfolio" target="_blank">Visit GitHub Repo</a>
-                        <ul class="project-icons">
-                            <li><img src="assets/images/icons/html.svg"/>HTML</li>
-                            <li><img src="assets/images/icons/css.svg"/>CSS</li>
-                            <li><img src="assets/images/icons/javascript.svg"/>Javascript</li>
-                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
-                        </ul>
-                    </div>
-                    <div class="project-desc">
-                        <h1>This Website</h1>
-                        <p>I created this website in my spare time as an extension to my resume. Many of my old web development projects have been lost to the chaotic file management of my teenage self, so this website was a great way to wrap up some of what I learned back then into one project. I decided to forgo the use of a CMS like Wordpress for this site in order to not only have more precise control over the layout and functionality, but also to display my ability to build a responsive website from scratch.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="project" data-aos="zoom-in">
+        <img class="project-header" src="assets/images/project-headers/wc-gb-automation.jpg" />
+        <img class="project-header-mobile" src="assets/images/project-headers/wc-gb-automation-mobile.png" />
+        <div class="project-info">
+          <div class="project-sidebar">
+            <a class="project-button" href="https://github.com/maxbraun1/WooCommerceAutomation" target="_blank"
+              >Visit GitHub Repo</a
+            >
+            <ul class="project-icons">
+              <li><img src="assets/images/icons/nodejs.svg" />Node JS</li>
+              <li><img src="assets/images/icons/git.svg" />Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="project-desc">
+            <h1>WooCommerce & GunBroker Automation</h1>
+            <p>
+              While working as a web developer for Seattle Engraving Center, I took initiative to find a solution to the
+              countless hours spent posting merchandise on
+              <a href="https://www.gunbroker.com/">GunBroker.com</a> and our
+              <a href="https://woocommerce.com/">WooCommerce Store</a>. After some research, I found that GunBroker.com,
+              WooCommerce, and many of the suppliers we dropship merchandise from offer APIs.
+            </p>
 
-            <div class="project" data-aos="zoom-in">
-                <img class="project-header" src="assets/images/project-headers/betterdrugads.jpg"/>
-                <img class="project-header-mobile" src="assets/images/project-headers/betterdrugads-mobile.jpg"/>
-                <div class="project-info">
-                    <div class="project-sidebar">
-                        <a class="project-button" href="https://github.com/Jordan-Demske/CS495_Capstone_Project" target="_blank">Visit GitHub Repo</a>
-                        <a class="project-button" href="http://betterdrugads.com" target="_blank">Visit Site</a>
-                        <ul class="project-icons">
-                            <li><img src="assets/images/icons/html.svg"/>HTML</li>
-                            <li><img src="assets/images/icons/css.svg"/>CSS</li>
-                            <li><img src="assets/images/icons/javascript.svg"/>Javascript</li>
-                            <li><img src="assets/images/icons/php.svg"/>PHP</li>
-                            <li><img src="assets/images/icons/mysql.svg"/>MySQL</li>
-                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
-                        </ul>
-                    </div>
-                    <div class="project-desc">
-                        <h1>Capstone Project</h1>
-                        <p>This website was developed by my capstone teammates and I. We built a platform for pharmacist Bob Gold to share his reviews of popular drug ads, and the problems with them. It allows for him, along with anyone else given admin credentials, to log in and add, edit, or delete reviews. The website is built using HTML, CSS, jQuery, PHP, and MySQL.</p>
-                    </div>
-                </div>
-            </div>
+            <p>
+              Using <a href="https://nodejs.org/en">Node.js</a>, I created 2 programs (one for WooCommerce and one for
+              GunBroker) that automate the action of posting items on our GunBroker and WooCommerce stores. The programs
+              start by gathering each vendor's available inventory, either through their API or by downloading a CSV
+              inventory file from their FTP server. Next, the program converts this data into JSON format and iterates
+              through every product, removing unnecessary data, adding required fields, and properly formatting any
+              fields that need it. Finally, the programs iterate through the formatted inventory, generating custom
+              product images and posting the item with all necessary information to either GunBroker or our WooCommerce
+              based store. The programs can also check every item currently listed on GunBroker.com or our WooCommerce
+              store and determine whether that item is still available from any of our suppliers, automatically deleting
+              or suggesting the deletion of any product that is no longer available.
+            </p>
 
-            <div class="project" data-aos="zoom-in">
-                <img class="project-header" src="assets/images/project-headers/wikisearch.jpg"/>
-                <img class="project-header-mobile" src="assets/images/project-headers/wikisearch-mobile.jpg"/>
-                <div class="project-info">
-                    <div class="project-sidebar">
-                        <a class="project-button" href="https://github.com/maxbraun1/WikiSearch" target="_blank">Visit GitHub Repo</a>
-                        <ul class="project-icons">
-                            <li><img src="assets/images/icons/java.svg"/>Java</li>
-                            <li><img src="assets/images/icons/git.svg"/>Git & GitHub</li>
-                            <li><img src="assets/images/icons/gradle.svg"/>Gradle</li>
-                            <li><img src="assets/images/icons/intellij.svg"/>IntelliJ</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="project-desc">
-                        <h1>WikiSearch</h1>
-                        <p>A project partner and I collaborated to develop and test a Java application which uses Wikipedia's API to display page data. Given a term that exists as a page on Wikipedia, the application displays information about that page's recent revisions and/or the pages top editors.</p>
-                    </div>
-                </div>
-            </div>
+            <p>
+              <b>These two programs showed results</b>. Our number of GunBroker listings shot from around 1,300 to over
+              3,500 over the course of a week. One listing typically took around 20 minutes to post, but the programs
+              were able to post ~1000 listings in that same time. We quickly became a top 100 seller on GunBroker, and
+              no longer had to dedicate an employee to listing products all day.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        </section>
-        
-    </body>
+      <div class="project" data-aos="zoom-in">
+        <img class="project-header" src="assets/images/project-headers/maxbraunus.jpg" />
+        <img class="project-header-mobile" src="assets/images/project-headers/maxbraunus-mobile.jpg" />
+        <div class="project-info">
+          <div class="project-sidebar">
+            <a class="project-button" href="https://github.com/maxbraun1/Portfolio" target="_blank"
+              >Visit GitHub Repo</a
+            >
+            <ul class="project-icons">
+              <li><img src="assets/images/icons/html.svg" />HTML</li>
+              <li><img src="assets/images/icons/css.svg" />CSS</li>
+              <li><img src="assets/images/icons/javascript.svg" />Javascript</li>
+              <li><img src="assets/images/icons/git.svg" />Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="project-desc">
+            <h1>This Website</h1>
+            <p>
+              I created this website in my spare time as an extension to my resume. Many of my old web development
+              projects have been lost to the chaotic file management of my teenage self, so this website was a great way
+              to wrap up some of what I learned back then into one project. I decided to forgo the use of a CMS like
+              Wordpress for this site in order to not only have more precise control over the layout and functionality,
+              but also to display my ability to build a responsive website from scratch.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project" data-aos="zoom-in">
+        <img class="project-header" src="assets/images/project-headers/betterdrugads.jpg" />
+        <img class="project-header-mobile" src="assets/images/project-headers/betterdrugads-mobile.jpg" />
+        <div class="project-info">
+          <div class="project-sidebar">
+            <a class="project-button" href="https://github.com/Jordan-Demske/CS495_Capstone_Project" target="_blank"
+              >Visit GitHub Repo</a
+            >
+            <ul class="project-icons">
+              <li><img src="assets/images/icons/html.svg" />HTML</li>
+              <li><img src="assets/images/icons/css.svg" />CSS</li>
+              <li><img src="assets/images/icons/javascript.svg" />Javascript</li>
+              <li><img src="assets/images/icons/php.svg" />PHP</li>
+              <li><img src="assets/images/icons/mysql.svg" />MySQL</li>
+              <li><img src="assets/images/icons/git.svg" />Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="project-desc">
+            <h1>Capstone Project</h1>
+            <p>
+              This website was developed by my capstone teammates and I. We built a platform for pharmacist Bob Gold to
+              share his reviews of popular drug ads, and the problems with them. It allows for him, along with anyone
+              else given admin credentials, to log in and add, edit, or delete reviews. The website is built using HTML,
+              CSS, jQuery, PHP, and MySQL.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project" data-aos="zoom-in">
+        <img class="project-header" src="assets/images/project-headers/wikisearch.jpg" />
+        <img class="project-header-mobile" src="assets/images/project-headers/wikisearch-mobile.jpg" />
+        <div class="project-info">
+          <div class="project-sidebar">
+            <a class="project-button" href="https://github.com/maxbraun1/WikiSearch" target="_blank"
+              >Visit GitHub Repo</a
+            >
+            <ul class="project-icons">
+              <li><img src="assets/images/icons/java.svg" />Java</li>
+              <li><img src="assets/images/icons/git.svg" />Git & GitHub</li>
+              <li><img src="assets/images/icons/gradle.svg" />Gradle</li>
+              <li><img src="assets/images/icons/intellij.svg" />IntelliJ</li>
+            </ul>
+          </div>
+          <div class="project-desc">
+            <h1>WikiSearch</h1>
+            <p>
+              A project partner and I collaborated to develop and test a Java application which uses Wikipedia's API to
+              display page data. Given a term that exists as a page on Wikipedia, the application displays information
+              about that page's recent revisions and/or the pages top editors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
