@@ -133,22 +133,18 @@ a {
 /* ----- SITEWIDE STYLES ----- */
 
 body {
-  background-color: #0d0d0d;
+  background-color: #5680e9;
   font-family: "Montserrat", sans-serif;
 }
 
 .button {
   font-size: xx-large;
   padding: 15px 30px;
-  background-color: #00e6b8;
   border-radius: 5px;
   border: none;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-.button:hover {
-  background-color: #00cca3;
 }
 
 /* INTRO */
@@ -372,17 +368,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 2%;
 }
 .skill {
   text-align: left;
-  flex-basis: 32%;
-  background-color: #fafafa;
+  flex-basis: 25%;
   text-align: center;
-  padding: 50px;
+  padding: 20px 0;
   box-sizing: border-box;
-  margin-bottom: 20px;
-  border-radius: 10px;
 }
 .skill-icon {
   width: 60px;
