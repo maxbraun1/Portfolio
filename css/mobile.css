@@ -16,6 +16,9 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  #intro-buttons button {
+    margin-bottom: 10px;
+  }
   #message {
     display: flex;
     flex-direction: column;
@@ -50,27 +53,31 @@
   }
 }
 @media screen and (max-width: 768px) {
+  #picture {
+    width: 100%;
+  }
+  #intro-me {
+    max-width: 100%;
+    width: 80%;
+  }
   #intro {
     flex-direction: column;
     box-sizing: border-box;
   }
   #message {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     text-align: center;
   }
   #message h1 {
     text-align: center;
   }
   #pictures {
-    width: 70%;
+    width: 80%;
     margin: 10% 15%;
   }
 }
 @media screen and (max-width: 500px) {
-  #message {
-    margin: 10% 0;
-  }
   #blob {
     height: auto;
     width: 100%;
